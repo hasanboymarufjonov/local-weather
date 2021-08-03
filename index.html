@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Weather | Hasanboy Marufjonov</title>
+    <script src="https://kit.fontawesome.com/855ee508c4.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="overlay">
+    <div id="content">
+      <h1>
+        <i class="fas fa-cloud-sun fa-lg"></i>
+        Local Weather
+      </h1>
+  
+      <div id="info">
+        <h2 id="loc"></h2>
+  
+        <div class="ctrl">
+          <p id="temp">0</p>
+          <p>°</p>
+          <div id="deg">
+            <span id="c" class="cur" onclick="convert('C')">C</span>
+            <span id="f" onclick="convert('F')">F</span>
+          </div>
+        </div>
+  
+        <div class="add">
+          <p>
+            <b>Low</b>: <span id="low">0 °C</span>
+          </p>
+  
+          <p>
+            <b>Feels Like</b>: <span id="feel">0 °C</span>
+          </p>
+  
+          <p>
+            <b>High</b>: <span id="high">0 °C</span>
+          </p>
+        </div>
+      </div>
+  
+      <div id="weather">
+        <div class="icon-wrap">
+          <img id="icon" />
+          <h2 id="main">Unknown</h2>
+        </div>
+  
+        <div class="add">
+          <p>
+            <b>Wind</b>: <span id="wind">0 mph</span>
+          </p>
+  
+          <p id="desc">Unknown</p>
+  
+          <p>
+            <b>Humidity</b>: <span id="humidity">0%</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div id="background-wrap">
+    <div class="x1">
+      <div class="cloud"></div>
+    </div>
+  
+    <div class="x2">
+      <div class="cloud"></div>
+    </div>
+  
+    <div class="x3">
+      <div class="cloud"></div>
+    </div>
+  
+    <div class="x4">
+      <div class="cloud"></div>
+    </div>
+  
+    <div class="x5">
+      <div class="cloud"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
